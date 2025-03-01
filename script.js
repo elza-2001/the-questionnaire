@@ -8,11 +8,11 @@ const checkboxInput = document.querySelector("#agree");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let name = nameInput.value;
-  let secondName = secondNameInput.value;
-  let email = emailInput.value;
-  let phone = phoneInput.value;
-  let checkbox = checkboxInput.checked;
+  const name = nameInput.value;
+  const secondName = secondNameInput.value;
+  const email = emailInput.value;
+  const phone = phoneInput.value;
+  const checkbox = checkboxInput.checked;
 
   fetch('https://polinashneider.space/user', {
     method: 'POST',
